@@ -1,9 +1,24 @@
-body {
+/* 
+修改显示不全
+*/
+*{
+    /* 新加的代码 */
     padding: 0;
     margin: 0;
-    /* 这里放入你的背景图片 */
-    background: url(./assets/img/重庆夜景1.jpg) no-repeat;
-    width: 100vw;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    /* 这里放入你的背景图片  需要加center*/
+    background: url(./assets/img/重庆夜景1.jpg) no-repeat center;
+    
+    /* 这里改成flex布局
+    新加的代码
+    */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-size: cover;
 }
 
